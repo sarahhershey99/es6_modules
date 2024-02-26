@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ES6 Modules</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="index.css"
+    />
+  <script defer src="main.js""></script></head>
+  <body>
+    <main class="container">
+      <section class="formContainer">
+        <form id="submitForm">
+          <div class="form-group">
+            <label for="makeInput">Make:</label>
+            <input type="text" id="makeInput" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="modelInput">Model:</label>
+            <input type="text" id="modelInput" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="yearInput">Year:</label>
+            <input
+              type="number"
+              max="2021"
+              min="1900"
+              id="yearInput"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <button type="button" id="submitBtn" class="addBtn">Add</button>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <section class="container">
+        <div class="row">
+          <div id="wishListContainer" class="WLC">
+            <h3 id="wishlist-title">Wish List</h3>
+            <ul id="wishlistUl" class="WL"></ul>
+          </div>
+          <div class="VC">
+            <div class="card">
+              <div id="car-card" class="card-body">
+                <h3 id="carDisplay">Vehicle</h3>
+                <p id="car-make"></p>
+                <p id="car-model"></p>
+                <p id="car-year"></p>
+                <button class="removeBtn" id="removeBtn" disabled>
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

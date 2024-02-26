@@ -1,11 +1,15 @@
 {
-  "name": "es6_modules",
+  "name": "my-webpack-project",
   "version": "1.0.0",
-  "description": "Our users should be able to come to our web app to add or remove cars that they want on their Wish List.",
+  "description": "My webpack project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "test": "echo `Error: no test specified` && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,16 @@
   },
   "homepage": "https://github.com/Bryantellius/es6_modules#readme",
   "devDependencies": {
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@webpack-cli/generators": "^3.0.7",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.10.0",
+    "prettier": "^3.2.5",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^5.0.2",
+    "workbox-webpack-plugin": "^7.0.0"
   }
 }

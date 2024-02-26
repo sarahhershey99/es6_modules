@@ -1,0 +1,62 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 950px;
+    height: 600px;
+}
+body {
+    background-color: darkolivegreen;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    font-style: bold;
+    width: 1520px;
+    height: 400px;
+}
+.form-group{
+    width: 500px;
+    height: 50px;
+}
+.form-control{
+    height: 30px;
+    width: 400px;
+}
+.WLC{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    width: 1520px;
+}
+.WL{
+    align-self: flex-start;
+    background-color: antiquewhite;
+    color: black;
+    width: 300px;
+    height: 300px;
+}
+.VC {
+    align-self: flex-start;
+    width: 350px;
+    height: 350px;
+}
+.addBtn {
+    width: 50px;
+    height: 24px;
+    background-color: antiquewhite;
+    color: black;
+    font-style: bold;
+}
